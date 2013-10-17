@@ -762,9 +762,8 @@ EOF
 
 # wrapper for the functions which run and compile MC codes
 function runMC {
-echo "runMC not suported in this MC@NLO installation for CMSSW"
-exit
-#added by FH
+echo "runMC not suported in this MC@NLO installation for CMSSW" #added by FH
+exit #added by FH
 compile MC
 whichherpdf $HERPDF
 if [ $pdftype = 1 ]
