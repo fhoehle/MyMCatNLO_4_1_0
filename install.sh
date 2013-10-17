@@ -13,6 +13,7 @@ if [ "X$1" == "X" ]; then
   chmod u+x MCatNLO.inputs
   chmod -R a-w $installDir
 else if [  "X$1" == "Xclean" ]; then
+  chmod -R u+w $installDir
   rm -rf $tarBallDir
   rm -rf $installDir
 else
