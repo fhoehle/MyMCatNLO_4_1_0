@@ -11,3 +11,7 @@ if [ -z "$LHAPDF_ROOT" -o $1 == "-f" ]; then
 else
   echo "already existing, doing nothing \n resetting it by calling with force -f "
 fi
+# main MCatNLO source
+export LOCAL_MCatNLODIR=$PWD
+# make scripts available
+export PATH=$PWD/bin:$PATH

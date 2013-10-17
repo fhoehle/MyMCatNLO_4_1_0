@@ -9,3 +9,4 @@ mkdir $installDir
 cd $installDir
 tar -xzf $tarBallDir/Package4.10_dist.tar.gz
 patch < $mainDir/cmsswMCatNLO_4_1_0.patch
+chmod a-w *
