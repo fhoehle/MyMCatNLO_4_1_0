@@ -296,8 +296,7 @@ HWPPANALYZER="TopAnalysis"
 HERWIGVER="herwig6521.o"
 # set the following variable equal to the name of the directory where
 # the PDF grid files are stored. Effective only if PDFLIBRARY=THISLIB
-PDFPATH=`lhapdf-config --pdfsets-path` # FH
-#"/home/frixione/Physics/PDFgrids/" #FH
+PDFPATH=`lhapdf-config --pdfsets-path` # "/home/frixione/Physics/PDFgrids/" #FH
 # set the following variable equal to STATIC or DYNAMIC according to
 # the type of LHAPDF library one wants to link to
 LHALINK=DYNAMIC
