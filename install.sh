@@ -11,7 +11,7 @@ if [ "X$1" == "X" ]; then
   tar -xzf $tarBallDir/Package4.10_dist.tar.gz
   patch < $mainDir/cmsswMCatNLO_4_1_0.patch
   chmod u+x MCatNLO.inputs
-  chmod a-w *
+  chmod -R a-w $installDir
 else if [  "X$1" == "Xclean" ]; then
   rm -rf $tarBallDir
   rm -rf $installDir
