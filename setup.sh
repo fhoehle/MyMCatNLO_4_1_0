@@ -1,6 +1,6 @@
 # setting up neccessary libraries
 command -v scram > /dev/null 2>&1
-if [ "X$SCRAM_ARCH" != "slc6_amd64_gcc462" -a "X$SCRAM_ARCH" != "Xslc5_amd64_gcc462" ]; then
+if [ "X$SCRAM_ARCH" != "slc6_amd64_gcc462" -a "X$SCRAM_ARCH" != "Xslc5_amd64_gcc462" -a "X$SCRAM_ARCH" != "slc6_amd64_gcc472" ]; then
   echo "wrong architecture or none given SCRAM_ARCH: $SCRAM_ARCH"
   return 1
 fi
