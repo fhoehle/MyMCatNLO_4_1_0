@@ -1,12 +1,12 @@
 # setting up neccessary libraries
 command -v scram > /dev/null 2>&1
-if [ "X$SCRAM_ARCH" -ne "slc6_amd64_gcc462" -a "X$SCRAM_ARCH" -ne "slc5_amd64_gcc462" ]; then
+if [ "X$SCRAM_ARCH" != "slc6_amd64_gcc462" -a "X$SCRAM_ARCH" != "Xslc5_amd64_gcc462" ]; then
   echo "wrong architecture or none given SCRAM_ARCH: $SCRAM_ARCH"
-  exit 1
+  return 1
 fi
 if [ $? -ne 0 ]; then
   echo "scarm doesn't exist, run cmsenv"
-  exit 1
+  return 1
 fi
 if [ -z "$LHAPDF_ROOT" -o "$1" == "-f" ]; then
   echo "sourcing lhapdf from scram tool info lhapdf"
